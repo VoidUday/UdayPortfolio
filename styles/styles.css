@@ -10,23 +10,25 @@ body {
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    padding: 0px 50px;
+    height: 80px;
+    
 }
 
 .header_content {
     display: flex;
-    align-items: center;
-    padding: 0px 40px;
-    width: 1343px;
-    height: 78px;
+    padding: 10px 40px;
+    width: 100%;
+}
+.header-main {
+    width: 70%;
+    display: flex;
 }
 .header_logo_container {
     display: flex;
     align-items: center;
     color: #333;
     transition:  color .3s;
-    width: 30%;
-    padding: 0px 50px;
+    width: 100%;
 }
 .header-logo-img {
     display: flex;
@@ -36,14 +38,14 @@ body {
 .header-logo-img img {
     width: 3rem;
     height: 3rem;
-    padding-right: 1.5rem;
+    padding-right: 2.5rem;
 
 }
 .header-logo-sub {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 750;
-    /* letter-spacing: .5px; */
+    letter-spacing: .5px;
     font-family:'Source Sans Pro',sans-serif;
 }
 
@@ -51,26 +53,88 @@ body {
 .header-links {
     display: flex;
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 35px;
 
 }
 .header-links a {
     padding: 1.8rem;
     display: inline-block;
     font-size: .92rem;
-    color: #333333;
+    color: #333;
+    opacity: 0.95;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 710;
     transition: color .3s;
     text-decoration: none;
-    padding: 20px 50px;
+    padding: 0px 35px;
     font-family: 'Source Sans Pro',sans-serif;
-    /* font-family: Arial, Helvetica, sans-serif; */
+   line-height: 1.5;
 }
 .header-links a:hover {
     color: rgb(23, 23, 209);
 }
 li {
     list-style: none;
+}
+
+.intro-section {
+    background: linear-gradient(to right,rgba(243, 243, 243, 0.74),rgba(233, 238, 236, 0.829)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    color: #fff;
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+}
+.intro-content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 70%;
+}
+.heading-primary {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+.intro-section{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #111;
+    font-weight: 500;
+    font-family:cursive;
+}
+.intro-info {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
+    width: 80%;
+}
+.text-primary {
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.8;
+
+}
+.intro-categories {
+    margin-top: 5rem;
+    text-align: center;
+    
+}
+.btn--bg {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(102, 13, 218);
+}
+.intro-categories a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 600;
+    border-radius: 10px/10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
