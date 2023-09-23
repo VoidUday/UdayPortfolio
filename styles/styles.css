@@ -14,7 +14,6 @@ body {
     height: 80px;
     
 }
-
 .header_content {
     display: flex;
     padding: 10px 40px;
@@ -72,7 +71,7 @@ body {
    line-height: 1.5;
 }
 .header-links a:hover {
-    color: rgb(23, 23, 209);
+    color: rgb(221, 0, 111);
 
 }
 li {
@@ -83,14 +82,14 @@ li {
     background: linear-gradient(to right,rgba(243, 243, 243, 0.74),rgba(233, 238, 236, 0.829)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     color: #fff;
     background-position: center;
-    height: 100vh;
-    min-height: 80rem;
-    max-height: 120rem;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: calc(100% * 2 / 4);
     position: relative;
 }
 .intro-content {
     position: absolute;
-    top: 25%;
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90rem;
@@ -100,6 +99,11 @@ li {
 .heading-primary {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
+}
+.heading-primary span {
+    color: rgb(221, 0, 111);
+    border-bottom: 1px solid rgb(221, 0, 111);
+
 }
 .intro-section{
     font-size: 1.5rem;
@@ -127,7 +131,7 @@ li {
     display: inline-flex;
     height: 45px;
     width: 160px;
-    background-color: #0e3aca9f;
+    background-color: rgb(221, 74, 148);;
     border-radius: 10px/10px;
     outline: none;
     margin: 20px 20px 20px 20px;
@@ -165,7 +169,7 @@ li {
     width: 100%;
     height: 100%;
     left: -200px;
-    background: #0e3aca;
+    background: rgb(221, 0, 111);
     position: absolute;
     transition: all .35s ease-Out;
     bottom: 0;
@@ -179,4 +183,128 @@ li {
     color: #ffffff;
   }
   
+  /* mouse animation */
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+   }
   
+  
+  .mouse_scroll {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 100px;
+    margin-top: 140px;
+  }
+  
+  
+  .m_scroll_arrows
+  {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+     
+    border-right: 2px solid rgb(221, 0, 111);
+    border-bottom: 2px solid rgb(221, 0, 111);
+    margin: 0 0 3px 4px;
+    
+    width: 16px;
+    height: 16px;
+  }
+  .mouse {
+    height: 42px;
+    width: 24px;
+    border-radius: 14px;
+    transform: none;
+    border: 2px solid rgb(221, 0, 111);
+    top: 170px;
+  }
+  
+  .wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: rgb(221, 0, 111);
+    position: relative;
+    
+    height: 5px;
+    width: 5px;
+    border: 2px solid rgb(221, 0, 111);
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+  }
+  
+  .wheel {
+    -webkit-animation: mouse-wheel 0.2s linear infinite;
+    -moz-animation: mouse-wheel 0.2s linear infinite;
+    animation: mouse-wheel 0.2s linear infinite;
+  }
+  
+  @-webkit-keyframes mouse-wheel{
+     0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  @-moz-keyframes mouse-wheel {
+    0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @-o-keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  @keyframes mouse-wheel {
+  
+     0% { top: 1px; }
+    25% { top: 2px; }
+    50% { top: 3px;}
+    75% { top: 2px;}
+    100% { top: 1px;}
+  }
+  
+  @-webkit-keyframes mouse-scroll {
+  
+    0%   { opacity: 0;}
+    50%  { opacity: .5;}
+    100% { opacity: 1;}
+  }
+  @-moz-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
+  @keyframes mouse-scroll {
+  
+    0%   { opacity: 0; }
+    50%  { opacity: .5; }
+    100% { opacity: 1; }
+  }
