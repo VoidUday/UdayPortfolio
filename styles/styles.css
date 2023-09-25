@@ -17,7 +17,7 @@ body {
     background-color: gray;
 }
 header {
-  width: 86%;
+  width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -28,7 +28,6 @@ header {
 }
 .logo {
   width: 120px;
-  margin-top: 8px;
 
 }
 .logo img {
@@ -36,10 +35,18 @@ header {
   height: 3rem;
   border-radius: 50px;
 }
+.brand-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1;
 
+  font-weight: 700;
+  margin-left: -670px;
+}
 nav .logo {
     display: none;
 }
+
 nav ul {
   display: flex;
 }
@@ -48,8 +55,11 @@ nav ul li a {
   display: block;
   margin: 0 2px;
   font-weight: 600;
-  padding: 0px 18px;
+  padding: 0px 20px;
   transition: 0.2s;
+  letter-spacing: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
 }
 nav ul li a:hover {
   /* background-color: rgb(221, 0, 111); */
@@ -96,10 +106,13 @@ nav ul li a:hover {
   }
   nav .logo {
     display: block;
-    height: 100px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    margin-top: 19px;
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   nav ul {
     display: block;
@@ -431,4 +444,36 @@ li {
     0%   { opacity: 0; }
     50%  { opacity: .5; }
     100% { opacity: 1; }
+  }
+
+  /* About me  */
+
+  .about-me {
+    background-color: #e2e2e2;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    max-width: 120%;
+  }
+.text-about {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    justify-content: center;
+
+  }
+  .intro-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-style: normal;
+    color: #424040;
+    opacity: 0.8;
+    line-height: 1.5;
+    max-width: 80rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5rem 15rem
   }
