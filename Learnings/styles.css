@@ -30,8 +30,32 @@ a:hover {
 body {
   background-color: rgb(211, 123, 9);
 }
-@media (max-width : 500px) {
+/* @media (max-width : 500px) {
   body {
     background-color: aqua;
   }
+}
+ */
+
+ .box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: content-box;
+  
+}
+.test2 {
+  border: 5px dotted black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-right: 1em;
+  margin-left: 2em;
+  padding: 1em;
+
 }
