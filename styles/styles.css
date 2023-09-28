@@ -17,7 +17,6 @@ html, body {
    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: gray;
 }
 header {
   width: 100%;
@@ -91,32 +90,32 @@ nav ul li a:hover {
   header {
     width: 100%;
     padding: 0 20px;
-    box-shadow: 0 10px 100px rgba(68, 65, 65, 0.1);
+    box-shadow: 0 10px 100px rgba(236, 236, 236, 0.1);
   }
   nav {
     position: absolute;
-    left: -350px;
-    top: 0;
-    z-index: 999;
-    width: 280px;
-    height: 100vh;
-    background-color: rgba(22, 19, 19, 0.774);
+    left: -400px;
+    top: 85px;
+    z-index: 10;
+    width: 100%;
+    height: 26vh;
+    background-color: rgba(255, 255, 255, 0.774);
     transition: 0.2s;
-    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
   }
   #nav_check:checked ~ nav {
     left: 0;
   }
-  nav .logo {
+  /* nav .logo {
     display: block;
     width: 3rem;
     height: 3rem;
     border-radius: 50px;
-    margin-top: 19px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     margin-left: 20px;
-  }
+  } */
   /* nav .brand-name {
     display: block;
     width: 3rem;
@@ -133,7 +132,8 @@ nav ul li a:hover {
     margin: 5px;
     padding: 10px 15px;
     border-radius: 5px;
-    color: #fff;
+    color: #000000;
+    text-align: center;
 
   }
   nav ul li a:hover {
@@ -316,7 +316,7 @@ li {
     .brand-name {
       margin-left: -102px;
     }
- 
+  
   }
 
 
@@ -479,8 +479,9 @@ li {
   /* About me  */
 
   .about-me {
-    background: linear-gradient(to right,rgba(248, 243, 243, 0.966),rgba(250, 247, 247, 0.829)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+    /* background: linear-gradient(to right,rgba(248, 243, 243, 0.966),rgba(250, 247, 247, 0.829)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg); */
     color: rgb(0, 0, 0);
+    background-color: #f1f1f1;
     height: 100vh;
     width: 100%;
   }
@@ -523,9 +524,9 @@ li {
 
   .container-about {
     display: flex;
-    padding: 20px;
-    flex: 1;
-    flex-flow: row wrap;
+    padding: 10px;
+    height: 100vh;
+    flex-direction: row;
     margin-top: -420px;
   }
   .container-about .left-text {
