@@ -94,7 +94,7 @@ nav ul li a:hover {
   }
   nav {
     position: absolute;
-    left: -400px;
+    left: -450px;
     top: 85px;
     z-index: 10;
     width: 100%;
@@ -316,9 +316,11 @@ li {
     .brand-name {
       margin-left: -102px;
     }
-  
+   .container-about {
+    display: block;
+    
+   }
   }
-
 
 #button-2 {
     position: relative;

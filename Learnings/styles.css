@@ -59,3 +59,23 @@ body {
   padding: 1em;
 
 }
+.con {
+  display: flex;
+  margin: 5px;
+}
+
+.con div {
+  background-color: blue;
+  height: 50px;
+  margin: 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 600px){
+  .con {
+    display: flex;
+  }
+  .left {
+    flex: 1;
+     flex-direction: column;
+}
+}
