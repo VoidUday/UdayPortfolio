@@ -483,9 +483,8 @@ li {
     display: flex;
     align-items: center;
     justify-content :center;
-
     margin-top: 100px;
-    background-color: #fff ;
+    background-color: #fff ; 
   }
  .text-about::after {
   content: '';
@@ -514,12 +513,20 @@ li {
     width: 100%;
     margin-top: 30px;
   }
+
   .know-me {
       font-weight: 700;
       padding-left: 50px;
       font-size: 2rem;
       margin-bottom: 3rem;
   }
+  .skills-title {
+    font-weight: 700;
+    padding-left: 50px;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
   .left-text p {
     font-size: 1.1rem;
     padding-left: 20px;
@@ -531,7 +538,7 @@ li {
   } 
 .know-me {
     font-weight: 700;
-    padding-left: 50px;
+    padding-left: 20px;
     font-size: 2rem;
     margin-bottom: 3rem;
 }
@@ -553,6 +560,7 @@ li {
   width: 200px; /* Set the width for the Contact button */
   height: 40px; /* Set the height for the Contact button */
   text-align: center;
+  margin-left: 20px;
   line-height: 40px; /* Vertically center the button text */
   background-color: #007bff; /* Button background color */
   color: #fff; /* Button text color */
@@ -578,7 +586,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 86.5%;
 
   }
   .text-about::after {
@@ -611,6 +619,9 @@ li {
   padding: 20px;
   margin:15px;
 }
+.skills-title {
+  margin-left: -35px;
+}
 .skills {
     display: grid;
     margin-top: 50px;
@@ -621,6 +632,7 @@ li {
 .skills_skill {
   margin-left: 10px;
   margin-bottom: 1.5rem;
+  text-align: center;
   width: auto;
   padding: 15px 15px;
   margin-right: 1.5rem;
@@ -661,4 +673,19 @@ li {
     font-weight: 500;
     color: #666;
   }
+}
+
+
+
+/* Projects section */
+
+.project-section {
+   height: 100vh;
+   width: 100%;
+   background-color: #f7f7f7;
+}
+
+.project-title {
+  text-align: center;
+  padding: 70px;
 }
